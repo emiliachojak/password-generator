@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<div class="container text-center">
+    <h1>Password Generator</h1>
+
+    <form action="{% url 'password' %}">
+        Password length:
+        <select name="length">
+            {% for i in loop_times %}
+            <option value="{{ i }}">{{ i }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <input type="checkbox" name="uppercase"> Uppercase
+        <br>
+        <input type="checkbox" name="numbers"> Numbers
+        <br>
+        <input type="checkbox" name="special"> Special Characters
+        <br>
+        <br>
+        <input type="submit" value="Generate Password" class="btn btn-primary">
+    </form>
+    <hr/>
+    <a href="{% url 'about' %}">About site</a>
+</div>

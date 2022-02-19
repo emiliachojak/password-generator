@@ -1,0 +1,164 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: hsla(215, 28%, 17%, 1);
+  background: linear-gradient(
+    270deg,
+    hsla(215, 28%, 17%, 1) 0%,
+    hsla(170, 79%, 39%, 1) 50%,
+    hsla(170, 84%, 48%, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    270deg,
+    hsla(215, 28%, 17%, 1) 0%,
+    hsla(170, 79%, 39%, 1) 50%,
+    hsla(170, 84%, 48%, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    270deg,
+    hsla(215, 28%, 17%, 1) 0%,
+    hsla(170, 79%, 39%, 1) 50%,
+    hsla(170, 84%, 48%, 1) 100%
+  );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1f2937", endColorstr="#15b097", GradientType=1 );
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  padding-top: 80px;
+}
+
+h1 {
+  line-height: 40px;
+  font-size: 40px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 800;
+  margin-bottom: 0px;
+}
+
+main {
+  padding-top: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.container {
+  width: 550px;
+  height: 550px;
+  padding-left: 52px;
+  background: #1f2937;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.text-highlight {
+  color: #15b097;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 10px;
+  line-height: 28px;
+}
+
+.slider-description {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.value {
+  color: #15b097;
+  font-weight: 800;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.generator-container {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider {
+  margin-top: 20px;
+  -webkit-appearance: none;
+  width: 222px;
+  height: 1px;
+  background: #fff;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #15b097;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.generator-btn {
+  background: #15b097;
+  padding: 9px 17px 9px 0px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+}
+
+.fa-solid.fa-bolt-lightning {
+  padding-left: 18px;
+  padding-right: 15px;
+}
+
+.divider {
+  margin-top: 30px;
+  padding-right: 52px;
+  width: 446px;
+  height: 0px;
+  border: 1px solid #2f3e53;
+}
+
+.passwords-container {
+  margin-top: 30px;
+  margin-right: 52px;
+  width: 500px;
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.password-box {
+  background: #273549;
+  color: #202b3c;
+  width: 222px;
+  height: 39px;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

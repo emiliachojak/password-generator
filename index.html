@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fad81697bd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Generate a</br><span class="text-highlight">random password</span></h1>
+            <p class="description">Never use an insecure password again.</p>
+            </header>
+            <main>
+                <p class="slider-description">Set desired password length: <span class="value" id="slider-value"></span></p>
+                <div class="generator-container">
+                        <input type="range" min="8" max="20" value="14" class="slider" id="password-range">
+                        <button class="generator-btn" onclick="generateAllPasswords()"><i class="fa-solid fa-bolt-lightning"></i>Generate passwords</button>
+                </div>
+                <div class="divider"></div>
+                <div class="passwords-container">
+                    <div class="password-box" id="first-password-box">...</div>
+                    <div class="password-box" id="second-password-box">...</div>
+                    <div class="password-box" id="third-password-box">...</div>
+                    <div class="password-box" id="fourth-password-box">...</div>
+                </div>
+            </main>
+        </div>
+    <script src="index.js"></script>
+</body>
+</html>
